@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Semantic UI</title>
+		<link href=
+"https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+			rel="stylesheet" />
+	</head>
+	<body>
+		<div class="ui message"><i aria-hidden="true" class="close icon"></i><div class="content"><div class="ui huge header">Team Eagles</div><h2>Predict offensive message using NLP and transfer learning
+        </h2></div></div>
+		<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js">
+		</script>
+
+<div class="ui inverted segment"></div>
+
+<div class="ui placeholder segment">
+
+    <form  action="/predict" method="POST" class="ui form segment">
+        
+        <div>
+        	<h3 style="text-align: center;">Type a sentence here: </h3>
+        	<textarea name="text_input" rows="4" cols="80" style="max-width: 500px;"></textarea>
+        	<!-- <input type="text" name="text_input"> -->
+        </div>
+        
+        <br>
+        <input class="ui primary submit button" type="submit" value="Submit">
+
+        <!-- this is the output -->
+
+        <br>
+        <br>
+
+        <h3 style="text-align: center;"><strong>Prediction:</strong></h3>
+        <!-- <h2 style="text-align: center;">This is a offensive message</h2>-->
+        <h2 style="text-align: center;">{{result}}</h2>
+
+        <br>
+        <br>
+        <br>
+      </form>
+
+  </div>
+
+
+	</body>
+</html>

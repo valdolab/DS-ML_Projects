@@ -1,0 +1,21 @@
+<html>
+<body>
+    <h3>Income Prediction Form</h3>
+ 
+<div>
+  <form action="/predict" method="POST">
+    <label for="text_input">Text</label>
+    <p><textarea name="text_input" rows="5" cols="50"></textarea></p>
+   
+    <br>
+
+    Result: {{result}}
+
+    <br>
+    <br>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>
